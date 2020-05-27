@@ -1,0 +1,9 @@
+https://maven.java.net/index.html#nexus-search;classname~JSF
+Luna - http://download.eclipse.org/releases/luna
+
+JSF.*
+Eclipse Java EE Developer Tools
+Eclipse Java Web Developer Tools
+Eclipse Web Developer Tools
+JST Server Adapters
+JST Server Adapters Extensions
