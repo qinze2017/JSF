@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:jsf="http://xmlns.jcp.org/jsf"
+    xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>notebook</title>
 </head>
 <body>
 	<h1>Hello world !</h1>
+	<p>Add a note:</p>
+	<h:form>
+		<label for="username">Name: </label>
+        <h:inputText id="username" value="#{note.name}" /><br />
+        <label for="email">email: </label>
+        <input type="email" jsf:id="email" value="#{note.email}" /><br />
+        <label for="note">Note: </label>
+        <h:inputTextarea id="note" rows="8" value="#{note.note}"></h:inputTextarea><br />
+        <input type="submit" jsf:id="submit" action="response" value="Submit" />
+	</h:form>
 </body>
 </html>
