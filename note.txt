@@ -7,3 +7,20 @@ Eclipse Java Web Developer Tools
 Eclipse Web Developer Tools
 JST Server Adapters
 JST Server Adapters Extensions
+
+Attetions :
+1. Do not forget add libraries of JSF
+jsf-api
+jsf-impl
+
+2. to redirect notebook
+add jboss-web.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jboss-web PUBLIC
+    "-//JBoss//DTD JBOSS 5.0//EN"
+    "http://www.jboss.org/j2ee/dtd/jboss-web_5_0.dtd"
+>
+<jboss-web>
+    <context-root>/notebook</context-root>
+</jboss-web>
